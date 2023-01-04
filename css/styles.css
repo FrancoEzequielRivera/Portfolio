@@ -23,8 +23,25 @@ ul>a>li:hover{
 .AP{
     padding: 1rem 0rem;
     display: grid;
-    grid-template-areas: 'logo . . . . . ul . .';
+    grid-template-areas: 'logo . . . . . ul . social';
 }
+
+.social-media{
+    grid-area: social;
+    display: flex;
+}
+
+.icon{
+    list-style: none;
+    font-size: 2.3rem;
+    margin-left: 1.5rem;
+    background-color: #21201D;
+}
+
+.fa-brands:hover{
+    background-color: rgb(255, 170, 0);
+}
+
 
 .inicio{
     grid-area: inicio;
@@ -88,10 +105,8 @@ ul>a>li:hover{
 .presentation{
     display: grid;
     grid-template-areas: '. . . . . . . . . .'
-                         '. . box1 . . . box2 . . .'
-                         '. . . . box3 . . . . .';
-
-    height: 50vw;
+                         '. . box1 . . . box2 . . .';
+    height: 40vw;
 }
 
 .box1{
@@ -112,23 +127,51 @@ ul>a>li:hover{
 }
 
 .box3{
-    grid-area: box3;
+    width: 80rem;
+    margin-top: 10rem;
+    margin-right: 35%;
+    margin-left: 15%;
 }
 
-main > div > div > h1{
+.hero-title{
     color: #FF8303;
     font-size: 64px;
     font-weight: bolder;
 }
 
-main > div > div > p:first-of-type{
+.p-first{
     font-size: 40px;
     font-weight: bold;
 }
-main > div > div > p{
+.p-second-hero{
     font-size: 20px;
 }
 
 .img-man{
     border-radius: 0.5rem;
+}
+
+.about-me{
+    display: flex;
+    margin: auto;
+    width: 80rem;
+}
+
+.code-icon{
+    background-color: #FF8303;
+}
+
+.about-me > img{
+    height: 100px;
+    width: 100px;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.about-me > p{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: justify;
+    margin: 0;
 }
