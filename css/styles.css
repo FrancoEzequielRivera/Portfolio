@@ -279,7 +279,7 @@ ul>a>li:hover{
 
 .languaje>img{
     height: auto;
-    width: 15rem;
+    width: 13rem;
 }
 
 .languaje>h3{
@@ -287,4 +287,43 @@ ul>a>li:hover{
     font-size: 32px;
     text-align: center;
     font-weight: 300;
+}
+
+.education{
+    margin-top: 5rem;
+}
+
+.orange{
+    color: #FF8303;
+}
+
+.education-tittle{
+    display: flex;
+    margin-left: 13rem;
+}
+
+.studies{
+    display: grid;
+    grid-template-areas: 'std1'
+                         'std2'
+                         'std3';
+    row-gap: 0.5rem;
+    margin: 0 13rem;
+}
+.study-1{
+    grid-area: std1;
+    background-color: #10c500;
+    padding: 3rem;
+}
+
+.study-2{
+    grid-area: std2;
+    background-color: #10c500;
+    padding: 3rem;
+}
+
+.study-3{
+    grid-area: std3;
+    background-color: #10c500;
+    padding: 3rem;
 }
