@@ -4,11 +4,54 @@
 }
 
 body{
-    background-color: #21201D;
+    margin: 0;
+    /*background-color: #21201D;*/
+    background-color: #1F1E1B;
 }
 
 header{
     height: 80px;
+}
+
+h1::selection{
+    color: rgb(0, 0, 0);
+    background-color: antiquewhite;
+}
+
+h2::selection{
+    color: rgb(0, 0, 0);
+    background-color: antiquewhite;
+}
+
+h3::selection{
+    color: rgb(0, 0, 0);
+    background-color: antiquewhite;
+}
+
+p::selection{
+    color: rgb(0, 0, 0);
+    background-color: antiquewhite;
+}
+
+li::selection{
+    color: rgb(0, 0, 0);
+    background-color: antiquewhite;
+}
+
+*::-webkit-scrollbar {
+    width: 15px;
+    background-color: #383630;
+  }
+
+*::-webkit-scrollbar-thumb {
+    background-color: #6e695e;
+    border-radius: 20px;
+    border: 3px solid rgb(71, 71, 71);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #FF8303;
+    border: 3px solid rgb(71, 71, 71);
 }
 
 a{
@@ -62,13 +105,12 @@ ul>a>li:hover{
 .inicio{
     grid-area: inicio;
     width:60px;
-    margin-right: 1rem;
 }
 
 .acerca{
     grid-area: acerca;
     width:120px;
-    margin-right: 1rem;
+    margin: 0 1.5em;
 }
 
 .contactame{
@@ -129,7 +171,7 @@ ul>a>li:hover{
 .box1{
     grid-area: box1;
     width: 480px;
-    margin-left: 9rem;
+    margin-left: 6rem;
 }
 
 .box2{
@@ -144,10 +186,10 @@ ul>a>li:hover{
 }
 
 .box3{
-    width: 80rem;
+    background-color: #1d1c19;
+    width: 100%;
     margin-top: 10rem;
-    margin-right: 35%;
-    margin-left: 15%;
+    padding: 5rem 0;
 }
 
 .hero-title{
@@ -175,7 +217,7 @@ ul>a>li:hover{
 }
 
 .code-icon{
-    background-color: #FF8303;
+    background-color: #ff8103da;
 }
 
 .about-me > img{
@@ -190,7 +232,7 @@ ul>a>li:hover{
     font-size: 24px;
     font-weight: 500;
     text-align: justify;
-    margin: 0;
+    /*margin: 0;*/
 }
 
 .ir_arriba{
@@ -206,4 +248,43 @@ ul>a>li:hover{
     right: 2rem;
     opacity: 0;
     transition: opacity 0.2s 0.1s ease-out;
+}
+
+.skills{
+    display: grid;
+    grid-template-areas: 'texto'
+                         'images';
+    gap: 1.5em;
+}
+
+.text-skills{
+    grid-area: texto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF8303;
+}
+
+.images-skills{
+    grid-area: images;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.languaje{
+    background-color: #1d1c19;
+}
+
+.languaje>img{
+    height: auto;
+    width: 15rem;
+}
+
+.languaje>h3{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 300;
 }
