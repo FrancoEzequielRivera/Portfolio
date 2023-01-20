@@ -1,6 +1,3 @@
-console.log("Hola mundo!");
-
-
 const ir_arriba = document.getElementById('arriba')
 
 ir_arriba.addEventListener('click', () => {

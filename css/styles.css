@@ -237,14 +237,14 @@ ul>a>li:hover{
 
 .ir_arriba{
     display: inline-block;
-    padding: 1rem;
+    padding: 0.7rem 1rem;
     border-radius: 1rem;
     background-color: #ff8000;
     font-size: 20px;
     color: rgb(0, 0, 0);
     cursor: pointer;
     position: fixed;
-    bottom: 2rem;
+    bottom: 1.5rem;
     right: 2rem;
     opacity: 0;
     transition: opacity 0.2s 0.1s ease-out;
@@ -300,30 +300,86 @@ ul>a>li:hover{
 .education-tittle{
     display: flex;
     margin-left: 13rem;
+    margin-bottom: 0.8rem;
 }
 
 .studies{
     display: grid;
     grid-template-areas: 'std1'
                          'std2'
-                         'std3';
+                         'std3'
+                         'std4'
+                         'std5';
     row-gap: 0.5rem;
     margin: 0 13rem;
 }
 .study-1{
     grid-area: std1;
-    background-color: #10c500;
-    padding: 3rem;
+    display: flex;
+    align-content: center;
+    background-color: #404040e8;
+    padding: 2rem 2rem 1.2rem 2rem;
 }
 
 .study-2{
     grid-area: std2;
-    background-color: #10c500;
-    padding: 3rem;
+    display: flex;
+    background-color: #353535d3;
+    padding: 2rem 2rem 1.2rem 2rem;
 }
 
 .study-3{
     grid-area: std3;
-    background-color: #10c500;
-    padding: 3rem;
+    display: flex;
+    background-color: #404040e8;
+    padding: 2rem 2rem 1.2rem 2rem;
+}
+
+.study-4{
+    grid-area: std4;
+    display: flex;
+    background-color: #353535da;
+    padding: 2rem 2rem 1.2rem 2rem;
+}
+
+.study-5{
+    grid-area: std5;
+    display: flex;
+    background-color: #404040e8;
+    padding: 2rem 2rem 1.2rem 2rem;
+}
+
+.studies img{
+    background-color: rgb(210, 210, 210);
+    height: 48px;
+    width: 48px;
+}
+
+.study-box{
+    height: auto;
+    width: 20em;
+    margin-left: 1rem;
+}
+
+.study-academy{
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255)
+}
+
+.study-tittle{
+    font-size: 1rem;
+    /* color: rgb(255, 234, 0); */
+    color: rgb(255, 157, 0);
+}
+
+.period{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color:rgb(210, 210, 210);
+}
+
+.soft_skills{
+    background-color:#221e1e;
+    margin-top: 5rem;
+    margin: 5rem 13rem 0rem 13rem;
 }
