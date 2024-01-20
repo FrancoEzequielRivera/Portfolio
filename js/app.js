@@ -1,4 +1,4 @@
-const ir_arriba = document.getElementById('arriba')
+const ir_arriba = document.getElementById('up')
 
 ir_arriba.addEventListener('click', () => {
     window.scrollTo({

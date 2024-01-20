@@ -59,6 +59,10 @@ a{
     color: #F0E3CA;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 ul>a>li:hover{
     color: #FF8303;
 }
@@ -94,7 +98,7 @@ ul>a>li:hover{
     color: #E1306C;
 }
 
-.fa-square-facebook:hover{
+.fa-linkedin:hover{
     color: #4267B2;
 }
 
@@ -235,7 +239,7 @@ ul>a>li:hover{
     /*margin: 0;*/
 }
 
-.ir_arriba{
+.up{
     display: inline-block;
     padding: 0.7rem 1rem;
     border-radius: 1rem;
@@ -257,7 +261,7 @@ ul>a>li:hover{
     gap: 1.5em;
 }
 
-.text-skills{
+.titles{
     grid-area: texto;
     display: flex;
     align-items: center;
@@ -297,7 +301,7 @@ ul>a>li:hover{
     color: #FF8303;
 }
 
-.education-tittle{
+.education-title{
     display: flex;
     margin-left: 13rem;
     margin-bottom: 0.8rem;
@@ -366,7 +370,7 @@ ul>a>li:hover{
     color: rgb(255, 255, 255)
 }
 
-.study-tittle{
+.study-title{
     font-size: 1rem;
     /* color: rgb(255, 234, 0); */
     color: rgb(255, 157, 0);
@@ -378,8 +382,104 @@ ul>a>li:hover{
     color:rgb(210, 210, 210);
 }
 
-.soft_skills{
+.project-title{
     background-color:#221e1e;
     margin-top: 5rem;
     margin: 5rem 13rem 0rem 13rem;
+}
+
+.projects{
+    display: grid;
+    grid-template-areas: 'project-1'
+                         'project-2'
+                         'project-3'
+                         'project-4'
+                         'project-5';
+    row-gap: 2rem;
+    margin: 0 13rem;
+    padding: 0.2rem;    
+}
+
+.project-1{
+    grid-area: project-1;
+    display: flex;
+    background-color: #353535da;
+    padding: 2rem 2rem 1.2rem 2rem;
+}
+
+.project-2{
+    grid-area: project-2;
+    display: flex;
+    background-color: #353535da;
+    padding: 2rem 2rem 1.2rem 2rem;
+}
+
+.project-3{
+    grid-area: project-3;
+    display: flex;
+    background-color: #353535da;
+    padding: 2rem 2rem 1.2rem 2rem;
+}
+
+.project-4{
+    grid-area: project-4;
+    display: flex;
+    background-color: #353535da;
+    padding: 2rem 2rem 1.2rem 2rem;
+}
+
+.project-5{
+    grid-area: project-5;
+    display: flex;
+    background-color: #353535da;
+    padding: 2rem 2rem 1.2rem 2rem;
+}
+
+.project-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.project-box-title{
+    color: #f8efdb;
+    font-size: 2rem;
+}
+
+.project-text{
+    font-size: 1.3rem;
+}
+
+.buttons{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.buttons>a{
+    margin-right: 1rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    background-color: #00000065;
+}
+
+.buttons>a:hover{
+    color: ;
+}
+
+.buttom-github{
+    border: 2px solid #096f00;
+    border-radius: 0.2rem;
+    box-shadow: 0px 0px 1rem #096f00;
+    color: #15ff00;
+}
+
+.buttom-interactive{
+    border: 2px solid #934a00;
+    border-radius: 0.2rem;
+    box-shadow: 0px 0px 1rem #934a00;
+    color: #FF8303;
+}
+
+.green{
+    color: #15ff00;
 }
